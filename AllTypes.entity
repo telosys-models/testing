@@ -1,22 +1,30 @@
 // Entity 
+// designed to test attributes types with different annotations 
+
 
 AllTypes {
+  id : int   { @Id } ;
 
-  xInt    : int   { @Id } ;
+  xInt    : int   ;
   xUInt   : int   { @UnsignedType  } ;
-  xOInt   : int   { @ObjectType   } ;
+  xOInt   : int   { @ObjectType    } ;
+  xUOInt  : int   { @UnsignedType  @ObjectType   } ;
   
   xByte   : byte  ;  
   xUByte  : byte  { @UnsignedType } ;
   xOByte  : byte  { @ObjectType   } ;
+  xUOByte : byte  { @UnsignedType @ObjectType   } ;
     
-  xShort  : short ;  
-  xUShort : short { @UnsignedType } ;
-  xOShort : short { @ObjectType   } ;
+  xShort   : short ;  
+  xUShort  : short { @UnsignedType } ;
+  xOShort  : short { @ObjectType   } ;
+  xUOShort : short { @UnsignedType @ObjectType   } ;
   
   xLong   : long  ;
   xULong  : long  { @UnsignedType } ;
   xOLong  : long  { @ObjectType } ;
+  xUOLong : long  { @UnsignedType @ObjectType } ;
+  xNNLong : long  { @NotNull } ;
   
   xFloat    : float    ;
   xUFloat   : float { @UnsignedType }   ;
@@ -26,17 +34,20 @@ AllTypes {
   xUDouble  : double { @UnsignedType }  ;
   xODouble  : double { @ObjectType }  ;
   
-  xDecimal  : decimal  ;
-  xUDecimal : decimal { @UnsignedType } ;
-  xODecimal : decimal { @ObjectType } ;
+  xDecimal   : decimal  ;
+  xUDecimal  : decimal { @UnsignedType } ;
+  xODecimal  : decimal { @ObjectType } ;
+  xNNDecimal : decimal { @NotNull } ;
 
-  xString   : string { @Size(50) } ;
-  xPString  : string { @Size(50) @PrimitiveType } ;
-  xOString  : string { @Size(50) @ObjectType    } ;
+  xString   : string  ;
+  xPString  : string { @PrimitiveType } ;
+  xOString  : string { @ObjectType    } ;
+  xNNString : string { @NotNull       } ;
     
-  xBoolean : boolean ;  
-  xPBoolean : boolean { @PrimitiveType } ;  
-  xOBoolean : boolean { @ObjectType    };  
+  xBoolean   : boolean ;  
+  xPBoolean  : boolean { @PrimitiveType } ;  
+  xOBoolean  : boolean { @ObjectType    };  
+  xNNBoolean : boolean { @NotNull    };  
 
   xDate : date ;  
   xTime : time ;  
