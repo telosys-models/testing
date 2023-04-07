@@ -1,0 +1,46 @@
+// Entity 
+
+AllTypes {
+
+  xInt    : int   { @Id } ;
+  xUInt   : int   { @UnsignedType  } ;
+  xOInt   : int   { @ObjectType   } ;
+  
+  xByte   : byte  ;  
+  xUByte  : byte  { @UnsignedType } ;
+  xOByte  : byte  { @ObjectType   } ;
+    
+  xShort  : short ;  
+  xUShort : short { @UnsignedType } ;
+  xOShort : short { @ObjectType   } ;
+  
+  xLong   : long  ;
+  xULong  : long  { @UnsignedType } ;
+  xOLong  : long  { @ObjectType } ;
+  
+  xFloat    : float    ;
+  xUFloat   : float { @UnsignedType }   ;
+  xOFloat   : float { @ObjectType }  ;
+  
+  xDouble   : double   ;
+  xUDouble  : double { @UnsignedType }  ;
+  xODouble  : double { @ObjectType }  ;
+  
+  xDecimal  : decimal  ;
+  xUDecimal : decimal { @UnsignedType } ;
+  xODecimal : decimal { @ObjectType } ;
+
+  xString   : string { @Size(50) } ;
+  xPString  : string { @Size(50) @PrimitiveType } ;
+  xOString  : string { @Size(50) @ObjectType    } ;
+    
+  xBoolean : boolean ;  
+  xPBoolean : boolean { @PrimitiveType } ;  
+  xOBoolean : boolean { @ObjectType    };  
+
+  xDate : date ;  
+  xTime : time ;  
+  xTimestamp : timestamp ;
+  
+  xBinary : binary ;  
+}
