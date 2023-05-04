@@ -9,30 +9,43 @@ AllTypes {
   xUInt   : int   { @UnsignedType  } ;
   xOInt   : int   { @ObjectType    } ;
   xUOInt  : int   { @UnsignedType  @ObjectType   } ;
+  xPInt   : int   { @PrimitiveType } ;
+  xNNInt  : int   { @NotNull } ;
   
   xByte   : byte  ;  
   xUByte  : byte  { @UnsignedType } ;
   xOByte  : byte  { @ObjectType   } ;
   xUOByte : byte  { @UnsignedType @ObjectType   } ;
+  xPByte  : byte  { @PrimitiveType } ;
+  xNNByte : byte  { @NotNull } ;
     
   xShort   : short ;  
   xUShort  : short { @UnsignedType } ;
   xOShort  : short { @ObjectType   } ;
   xUOShort : short { @UnsignedType @ObjectType   } ;
+  xPShort  : short { @PrimitiveType } ;
+  xNNShort : short { @NotNull } ;
   
   xLong   : long  ;
   xULong  : long  { @UnsignedType } ;
   xOLong  : long  { @ObjectType } ;
   xUOLong : long  { @UnsignedType @ObjectType } ;
+  xPLong  : long  { @PrimitiveType } ;
   xNNLong : long  { @NotNull } ;
   
   xFloat    : float    ;
   xUFloat   : float { @UnsignedType }   ;
   xOFloat   : float { @ObjectType }  ;
+  xUOFloat  : float { @UnsignedType @ObjectType }  ;
+  xPFloat   : float { @PrimitiveType }   ;
+  xNNFloat  : float { @NotNull }   ;
   
   xDouble   : double   ;
   xUDouble  : double { @UnsignedType }  ;
   xODouble  : double { @ObjectType }  ;
+  xUODouble : double { @UnsignedType @ObjectType }  ;
+  xPDouble  : double { @PrimitiveType }  ;
+  xNNDouble : double { @NotNull }  ;
   
   xDecimal   : decimal  ;
   xUDecimal  : decimal { @UnsignedType } ;
